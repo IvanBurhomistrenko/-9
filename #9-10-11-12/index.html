@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>№5</title>
+    <h1>його дільники</h1>
+    <script defer src="./index.js"></script>
+    <script language="JavaScript">
+        const n = +prompt('Num?')   
+        for ( let i = 1; i<=n; i++)
+            if (n%i==0){
+                document.write(i + ','); 
+            }
+    </script>
+    <h1>Парні дільники</h1>
+    <script language="JavaScript">
+        const t = +prompt('Num?') 
+        for ( let i = 1; i<=t; i++)
+            if (t%i==0){
+                if(i%2==0){
+                    document.write(i + ',');
+                }
+            }
+    </script>
+    <h1>Сума парніх дільників</h1>
+    <script language="JavaScript">
+        const c = +prompt('Num?')
+        var sum = 0;  
+        for ( let i = 1; i<=c; i++)
+            if (c%i==0){
+                if(i%2==0){
+                    sum+=i;
+                }
+            }
+            document.write(sum);
+    </script>
+    <h1>Таблиця</h1>
+    <script language="JavaScript">
+        for (let j = 1; j <= 10; j++){
+            document.write('<br>'); 
+            for( let k=1; k<=10; k++){
+                document.write(k + "*" + j + "=" +(k*j) + '<br>');
+            }  
+        } 
+    </script>
+</head>
+<body>
+</body>
+</html>
